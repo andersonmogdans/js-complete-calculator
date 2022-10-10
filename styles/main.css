@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(16, 9, 121, 1) 30%,
+    rgba(0, 101, 238, 1) 68%,
+    rgba(0, 232, 255, 1) 100%
+  );
+}
+
+.calculadora {
+  background-color: #fff;
+  margin: 50px;
+  width: 351px;
+  height: fit-content;
+  margin: 10% auto 0 auto;
+  border-radius: 10px;
+}
+
+.conteudo {
+  margin: 10px auto;
+}
+
+.tela {
+  background-color: #292929;
+  height: 60px;
+  width: 98%;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+  text-align: end;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 8px;
+  overflow: hidden;
+}
+
+.operadores,
+.numeros {
+  display: flex;
+}
+
+.operadores div,
+.numeros div {
+  text-align: center;
+  font-size: 29px;
+  background-color: #eee;
+  padding: 20px;
+  font-weight: bold;
+  margin-right: 1px;
+  margin-top: 1px;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.1s;
+  min-width: 47px;
+}
+
+.operadores div:hover,
+.numeros div:hover {
+  background-color: #d3d3d3;
+  transition: background 0.1s;
+}
+
+.resultado {
+  background-color: #ffa500 !important;
+  transition: background 0.1s !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+}
+
+.resultado:hover {
+  background-color: rgb(255, 153, 0) !important;
+  transition: background 0.3s !important;
+}

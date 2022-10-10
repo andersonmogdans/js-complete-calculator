@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1664298299007" clover="3.2.0">
+  <project timestamp="1664298299007" name="All files">
+    <metrics statements="41" coveredstatements="37" conditionals="42" coveredconditionals="35" methods="13" coveredmethods="13" elements="96" coveredelements="85" complexity="0" loc="41" ncloc="41" packages="1" files="4" classes="4"/>
+    <file name="handlers.js" path="C:\Users\PC007\Desktop\dojo brunin 2\testing\calculadora\js\handlers.js">
+      <metrics statements="24" coveredstatements="20" conditionals="22" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="29" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="37" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="47" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
+    </file>
+    <file name="inputs_value.js" path="C:\Users\PC007\Desktop\dojo brunin 2\testing\calculadora\js\inputs_value.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+    </file>
+    <file name="mathFunctions.js" path="C:\Users\PC007\Desktop\dojo brunin 2\testing\calculadora\js\mathFunctions.js">
+      <metrics statements="11" coveredstatements="11" conditionals="20" coveredconditionals="17" methods="2" coveredmethods="2"/>
+      <line num="2" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="13" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="result_screen.js" path="C:\Users\PC007\Desktop\dojo brunin 2\testing\calculadora\js\result_screen.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="2" count="26" type="stmt"/>
+      <line num="6" count="16" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

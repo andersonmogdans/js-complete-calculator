@@ -1,0 +1,20 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest-environment-jsdom": "^29.0.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.1",
+    "babel-jest": "^29.0.3",
+    "jest": "^29.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
