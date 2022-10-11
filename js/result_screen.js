@@ -8,14 +8,32 @@ export class Screen {
   }
 
   getResult() {
-    return document.getElementById(screenId()).innerHTML;
+    new Result().execute()
   }
   
   appendValue(value){
-    document.getElementById(screenId()).innerHTML += value
+    new AppendValue().execute(value)
   }
   
   updateResult(value) {
+    new UpdateResult().execute(value)
+  }
+}
+
+class Result {
+  execute() {
+    return document.getElementById(screenId()).innerHTML;
+  }
+}
+
+class AppendValue {
+  execute(value) {
+    document.getElementById(screenId()).innerHTML += value
+  }
+}
+
+class UpdateResult {
+  execute(value) {
     document.getElementById(screenId()).innerHTML = value;
   }
 }

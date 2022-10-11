@@ -1,9 +1,15 @@
 export class MathFunctions {
-  constructor(valor) {
-    this.valor = valor;
+  exponenciacao(valor) {
+    new Exponenciacao().execute(valor)
   }
 
-  exponenciacao(valor) {
+  raizQuadrada(valor) {
+    new RaizQuadrada().execute(valor)
+  }
+}
+
+class Exponenciacao {
+  execute(valor) {
     if (valor.includes("^") && valor.substring(0, 1) === "^") {
       throw new Error("error");
     } else if (valor.includes("^") && valor.substring(0, 1) !== "^") {
@@ -13,8 +19,10 @@ export class MathFunctions {
       }
     }
   }
+}
 
-  raizQuadrada(valor) {
+class RaizQuadrada {
+  execute(valor) {
     if (valor.includes("√") && valor.substring(0, 1) !== "√") {
       throw new Error("error");
     } else if (valor.includes("√") && valor.substring(0, 1) === "√") {

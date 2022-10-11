@@ -7,7 +7,22 @@ export class Handlers {
   constructor(evt) {
     this.evt = evt
   }
+  
   numberButtonHandler(evt) {
+    new NumberEvaluationCommand().execute(evt)
+  }
+  
+  operationButtonHandler(evt) {
+    new OperationEvaluationCommand().execute(evt)
+  }
+  
+  dotButtonHandler(evt) {
+    new DotEvaluationCommand().execute(evt)
+  }
+}
+
+class NumberEvaluationCommand {
+  execute(evt) {
     const numero = evt.target.innerHTML;
     const isMaxValue = screen.getResult().length >= 18;
     if (isMaxValue) {
@@ -16,8 +31,10 @@ export class Handlers {
       screen.appendValue(numero);
     }
   }
-  
-  operationButtonHandler(evt) {
+}
+
+class OperationEvaluationCommand {
+  execute(evt) {
     const numero = evt.target.innerHTML;
     const value = screen.getResult()
     if (value.toString().length === 0 && numero !== '√') {
@@ -26,8 +43,10 @@ export class Handlers {
       checkOperationButtonValue(numero, value)
     }
   }
-  
-  dotButtonHandler(evt) {
+}
+
+class DotEvaluationCommand {
+  execute(evt) {
     const numero = evt.target.innerHTML;
     if (screen.getResult().includes(".") && numero === ".") {
       return;
@@ -37,16 +56,16 @@ export class Handlers {
     }
     screen.appendValue(numero);
   }
-  
-  checkOperationButtonValue (numero, value) {
-    if (
-      caracteresEspeciais.some((x) => x.includes(numero)) &&
-      caracteresEspeciais.some((x) => value.includes(x))
-    ) {
-      return;
-    } else {
-      checkRaizQuadrada(numero, value)
-    }
+}
+
+export function checkOperationButtonValue (numero, value) {
+  if (
+    caracteresEspeciais.some((x) => x.includes(numero)) &&
+    caracteresEspeciais.some((x) => value.includes(x))
+  ) {
+    return;
+  } else {
+    checkRaizQuadrada(numero, value)
   }
 }
 

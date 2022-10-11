@@ -1,4 +1,4 @@
-import { Handlers, checkRaizQuadrada } from "../js/handlers";
+import { Handlers, checkRaizQuadrada, checkOperationButtonValue } from "../js/handlers";
 import { Screen, screenId } from "../js/result_screen";
 
 const handler = new Handlers()
@@ -62,7 +62,7 @@ test("should verify if the first value is different than a dot", () => {
 test("should add only one operation value on the screen ", () => {
   document.body.innerHTML = `<div id="${screenId()}">1+</div>`;
 
-  handler.checkOperationButtonValue("*", screen.getResult());
+  checkOperationButtonValue("*", screen.getResult());
   expect(screen.getResult()).toEqual("1+");
 });
 
