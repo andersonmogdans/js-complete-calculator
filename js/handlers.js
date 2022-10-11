@@ -9,15 +9,15 @@ export class Handlers {
   }
   
   numberButtonHandler(evt) {
-    new NumberEvaluationCommand().execute(evt)
+    return new NumberEvaluationCommand().execute(evt)
   }
   
   operationButtonHandler(evt) {
-    new OperationEvaluationCommand().execute(evt)
+    return new OperationEvaluationCommand().execute(evt)
   }
   
   dotButtonHandler(evt) {
-    new DotEvaluationCommand().execute(evt)
+    return new DotEvaluationCommand().execute(evt)
   }
 }
 

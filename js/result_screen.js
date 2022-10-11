@@ -8,15 +8,15 @@ export class Screen {
   }
 
   getResult() {
-    new Result().execute()
+    return new Result().execute()
   }
   
   appendValue(value){
-    new AppendValue().execute(value)
+    return new AppendValue().execute(value)
   }
   
   updateResult(value) {
-    new UpdateResult().execute(value)
+    return new UpdateResult().execute(value)
   }
 }
 

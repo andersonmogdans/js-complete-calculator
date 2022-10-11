@@ -1,10 +1,10 @@
 export class MathFunctions {
   exponenciacao(valor) {
-    new Exponenciacao().execute(valor)
+    return new Exponenciacao().execute(valor)
   }
 
   raizQuadrada(valor) {
-    new RaizQuadrada().execute(valor)
+   return new RaizQuadrada().execute(valor)
   }
 }
 
